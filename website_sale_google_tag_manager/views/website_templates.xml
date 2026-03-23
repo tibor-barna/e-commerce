@@ -6,7 +6,7 @@
         name="Tag Manager Enhanced Conversions"
         inherit_id="website_sale.confirmation"
     >
-        <xpath expr="//div[hasclass('oe_website_sale')]" position="inside">
+        <xpath expr="//div[@id='oe_structure_website_sale_confirmation_2']" position="inside">
             <t
                 t-if="website and website.google_tag_manager_key and website.google_tag_manager_enhanced_conversions"
             >

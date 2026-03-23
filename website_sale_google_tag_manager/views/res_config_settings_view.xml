@@ -9,20 +9,14 @@
             ref="website_google_tag_manager.view_website_config_settings"
         />
         <field name="arch" type="xml">
-            <xpath
-                expr="//field[@name='google_tag_manager_key']/../.."
-                position="after"
-            >
-                <div class="content-group">
-                    <div class="row mt16">
-                        <label
-                            class="col-lg-4 o_light_label"
-                            for="google_tag_manager_enhanced_conversions"
-                        />
-                        <field name="google_tag_manager_enhanced_conversions" />
-                    </div>
-                </div>
-            </xpath>
+            <setting id="google_tag_manager_setting" position="after">
+                <setting
+                    id="google_tag_manager_enhanced_conversions"
+                    help="This will provide the necessary data in the confirmation page that GTM needs to gather in order to be able to use Enhanced Conversions. The template can be edited if more info is needed in the future."
+                >
+                    <field name="google_tag_manager_enhanced_conversions" />
+                </setting>
+            </setting>
         </field>
     </record>
 </odoo>

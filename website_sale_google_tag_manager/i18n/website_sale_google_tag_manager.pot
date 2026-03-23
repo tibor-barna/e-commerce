@@ -27,6 +27,7 @@ msgstr ""
 #. module: website_sale_google_tag_manager
 #: model:ir.model.fields,help:website_sale_google_tag_manager.field_res_config_settings__google_tag_manager_enhanced_conversions
 #: model:ir.model.fields,help:website_sale_google_tag_manager.field_website__google_tag_manager_enhanced_conversions
+#: model_terms:ir.ui.view,arch_db:website_sale_google_tag_manager.view_website_config_settings
 msgid ""
 "This will provide the necessary data in the confirmation page that GTM needs"
 " to gather in order to be able to use Enhanced Conversions. The template can"
